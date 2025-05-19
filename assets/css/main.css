@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --white: #fff;
+    --contact: #26529b;
+    --bg-body: #3f3f3f;
+    --bg-main: #181818;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg-body);
+}
+main {
+    width: 100%;
+    max-width: 380px;
+    height: 100vh;
+    max-height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg-main);
+}
+/* Profile */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--white);
+}
+.profile img {
+    width: 40%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.profile img {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+/* Contact Row */
+.contacts-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.contact {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--contact);
+    border-radius: 50%;
+}
+.contact i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--white);
+}
+/* Contact Col */
+.contacts-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.contacts-col div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px;
+    gap: 5px;
+}
+.contacts-col div span:first-child {
+    font-weight: bold;
+    color: var(--contact);
+}
+.contacts-col div span:last-child a {
+    color: var(--white);
+}
+/* Socials */
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.socials div i {
+    font-size: 30px;
+    color: var(--white);
+}
